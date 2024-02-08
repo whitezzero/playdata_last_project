@@ -1,5 +1,5 @@
 # 냉잔고
-
+![스크린샷 2024-02-08 140428](https://github.com/whitezzero/playdata_last_project/assets/142198289/bf634b6e-73d4-4fdb-9d6d-0e680bcbd18d)
 
 
 ## 프로젝트 소개
