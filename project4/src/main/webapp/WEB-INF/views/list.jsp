@@ -2,7 +2,8 @@
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.DriverManager" %>
 <%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.util.Base64" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.Arrays" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
     // JDBC 드라이버 로드
@@ -28,6 +29,12 @@
         // mobnum 배열에서 네 번째부터 여섯 번째 요소를 복사하여 re_number 배열 생성
         String[] re_number = new String[3];
         System.arraycopy(mobnum, 3, re_number, 0, 3);
+
+        // 문자열을 리스트로 변환
+        String[] predictNamesArray = resultSet.getString("predict_names").split(",");
+        List<String> list = Arrays.asList(predictNamesArray);
+
+        String result = String.join(",", list);
 %>
 
 <!DOCTYPE html>
@@ -50,7 +57,7 @@
             <div class="imgWrap">
                 <img src="data:image/jpeg;base64, <%= base64Image %>" />
             </div>
-            <p>인식한 재료 > <%= resultSet.getString("predict_names").split(",") %></p>
+            <p>인식한 재료 > <%= result %></p>
         </article>
         <article class="list-page">
             <div class="tit">딱 맞는 추천 레시피</div>

@@ -13,7 +13,7 @@ def check_view(request):
         password="1234",
         database="recipe"
     )
-    print("ADFSFASFDSADSAFFADSDAFSFADDFSASDF")
+
     cursor = mydb.cursor()
 
     sql = "SELECT image_path FROM input_image ORDER BY id DESC LIMIT 1"
@@ -110,17 +110,18 @@ def check_view(request):
     # 유사도 판별 끝
 
     sim_result = ""
-    try:
-        # DB에 추천하는 레시피 ID 넣기 시작
-        for element in similarity_list[:10]:
+    # DB에 추천하는 레시피 ID 넣기 시작
+    for element in similarity_list[:10]:
+        try:
             select_query = "SELECT id FROM new_table WHERE title='" + element[0] + "'"
             cursor.execute(select_query)  
 
             results = cursor.fetchall()
-
+            print("results : ", results)
             sim_result += str(results[0][0]) + " "
-    except:
-        print("SDFSDSFAAFSDFASDDFASFDSDAFS", similarity_list)
+        except:
+            print("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM")
+    print("SDFSDSFAAFSDFASDDFASFDSDAFS", similarity_list)
     select_query = "INSERT INTO similarity_list (similar_number, predict_names, createdAt) VALUES (%s, %s, %s)"
     val = (sim_result.strip(), select_string, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
@@ -179,4 +180,3 @@ def testview(request):
     print(objects_detected)
 
     return HttpResponse([objects_detected, result, lines])
-    print("Hello, Docker logs!")
