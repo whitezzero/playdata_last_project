@@ -1,4 +1,5 @@
-# 냉잔고
+# <img src = "https://github.com/whitezzero/playdata_last_project/assets/159407646/d28df2af-bf82-42eb-b8af-c1fc3f04bffa" width="6%" height = "6%"> 냉잔고
+
 ## 1. 소개
 ### 📝Notion
 ### 👉 [냉잔고](https://www.notion.so/f818d63858cf4170a21a0eee32473027)
@@ -47,11 +48,10 @@
 
 ## 4. 서비스 소개
 👉[냉잔고](홈페이지 링크)
-사진들 들어갈 것임.
-
-
-
-
+![스크린샷 2024-02-08 173042](https://github.com/whitezzero/playdata_last_project/assets/159407646/a8509d48-aff5-4992-91bc-2c5650cff9cf)
+![스크린샷 2024-02-08 173131](https://github.com/whitezzero/playdata_last_project/assets/159407646/2172a86f-ed89-4bf4-b2c8-a655acb4a16d)
+![스크린샷 2024-02-08 173207](https://github.com/whitezzero/playdata_last_project/assets/159407646/d093da6c-35f0-4de6-8aeb-1e80f40a73c4)
+![스크린샷 2024-02-08 173450](https://github.com/whitezzero/playdata_last_project/assets/159407646/5fb4f631-5cbf-4876-ac48-322c3f181099)
 
  ## 5. 구조
 ## 프로젝트 구조
@@ -69,3 +69,15 @@
 - Collaboration : Notion
 - 배포 : Docker & Nginx
 
+## 🛠 개발환경
+- ### DB
+<img src="https://img.shields.io/badge/MariaDB-003545F?style=for-the-badge&logo=mariadb&logoColor=white">
+
+- ### Backend
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"><img src="https://img.shields.io/badge/intellijidea-FF7800?style=for-the-badge&logo=intellijidea&logoColor=white">
+
+- ### Frontend
+<img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html&logoColor=white"><img src="https://img.shields.io/badge/css3-572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+
+- ### 배포
+<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"><img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
