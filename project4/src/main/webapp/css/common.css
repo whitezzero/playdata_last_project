@@ -128,7 +128,7 @@ footer .footer-top ul li a {text-decoration: none;line-height: 45px;font-size: 1
     #moMenu {margin-left: 1rem;}
 
     .mobile-menu-area {display:block;position:relative;width: 100%;}
-    .mobile-menu-area ul {position:absolute;top:-131px;left:0;width: 100%;background: #fff;padding: 20px 0;z-index:2;box-sizing: border-box; transition:all 1s ease-in-out;}
+    .mobile-menu-area ul {position:absolute;top:-220px;left:0;width: 100%;background: #fff;padding: 20px 0;z-index:2;box-sizing: border-box; transition:all 1s ease-in-out;}
     .mobile-menu-area ul li {display: block;width: 85%;margin: 0 auto;}
     .mobile-menu-area ul li a {display:block;height: 45px;line-height: 45px;text-decoration: none;color: #333;font-size: 1.25rem;}
     .mobile-menu-area.toggle ul {top:0; border-bottom: 1px solid #ccc;}
@@ -154,7 +154,7 @@ footer .footer-top ul li a {text-decoration: none;line-height: 45px;font-size: 1
     #moMenu {margin-left: 1rem;}
 
     .mobile-menu-area {display:block;position:relative;width: 100%;}
-    .mobile-menu-area ul {position:absolute;top:-131px;left:0;width: 100%;background: #fff;padding: 20px 0;z-index:2;box-sizing: border-box; transition:all 1s ease-in-out;}
+    .mobile-menu-area ul {position:absolute;top:-220px;left:0;width: 100%;background: #fff;padding: 20px 0;z-index:2;box-sizing: border-box; transition:all 1s ease-in-out;}
     .mobile-menu-area ul li {display: block;width: 90%;margin: 0 auto;}
     .mobile-menu-area ul li a {display:block;height: 45px;line-height: 45px;text-decoration: none;color: #333;font-size: 1.25rem;}
     .mobile-menu-area.toggle ul {top:0; border-bottom: 1px solid #ccc;}

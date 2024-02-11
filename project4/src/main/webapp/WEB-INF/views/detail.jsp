@@ -1,3 +1,4 @@
+<%@ page import="com.springboot.project4.data.User" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,11 +60,15 @@
                                     <!-- comment_body -->
                                     <div class="comment_body">
                                         <div class="author_info">
+                                            <% if (session.getAttribute("loggedInUser") != null) { %>
                                             <div class="author">
-
-                                                <span>비로그인</span>
-
+                                                <span><%= ((User) session.getAttribute("loggedInUser")).getUserId() %></span>
                                             </div>
+                                            <% } else { %>
+                                            <div class="author">
+                                                <span>비로그인</span>
+                                            </div>
+                                            <% } %>
                                             <div class="details">
                                                 <span class="date">작성시간</span>
                                                 <!-- 신고 기능 없음 by osh -->

@@ -28,11 +28,12 @@
                       <div class="input-tit">카테고리</div>
                       <div class="input-info">
                           <div id="selectBox">
-                              <div class="cateName"><span>게시판 카테고리1</span><i class="fa-solid fa-caret-down"></i></div>
+                              <div class="cateName"><span>공지사항</span><i class="fa-solid fa-caret-down"></i></div>
                               <ul class="cateSel">
-                                  <li id="sel1" class="active">게시판 카테고리1</li>
-                                  <li id="sel2">게시판 카테고리2</li>
-                                  <li id="sel3">게시판 카테고리3</li>
+                                  <li id="sel1" class="active">공지사항</li>
+                                  <li id="sel2">문의사항</li>
+                                  <li id="sel3">자유게시판</li>
+                                  <li id="sel4">레시피공유게시판</li>
                               </ul>
                               <script>
                                   var cateBox = document.querySelector('.boardLt .tit');
@@ -83,8 +84,18 @@
                   <div class="input-group">
                       <div class="input-tit">제목</div>
                       <div class="input-info">
-                          <label for="userName">제목</label>
-                          <input type="text" id="userName" name="userName" placeholder="게시글 제목을 작성해주세요." required>
+                          <label for="title">제목</label>
+                          <input type="text" id="title" name="title" placeholder="게시글 제목을 작성해주세요." required>
+                          <span class="focus-border">
+                            <i></i>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="input-group">
+                      <div class="input-tit">글쓴이</div>
+                      <div class="input-info">
+                          <label for="userId">글쓴이</label>
+                          <input type="text" id="userId" name="userId" value="<%= ((User) session.getAttribute("loggedInUser")).getUserId() %>" readonly>
                           <span class="focus-border">
                             <i></i>
                           </span>
@@ -93,32 +104,42 @@
                   <div class="input-group">
                       <div class="input-tit">내용</div>
                       <div class="input-info">
-                          <body>
-                              <h3>Naver Smart Editor 2.0</h3>
-                              <form action="insertStudentInfoForm" method="post">
-                                  <div id="smarteditor">
-                                      <textarea name="editorTxt" id="editorTxt" rows="20" cols="10" placeholder="내용을 입력해주세요" style="width:100%"></textarea>
-                                  </div>
-                              </form>
-                          </body>
-                          <script>
-                              let oEditors = []
-                              smartEditor = function(){
-                                  console.log("Naver SmartEditor")
-                                  nhn.husky.EZCreator.createInIFrame({
-                                      oAppRef: oEditors,
-                                      elPlaceHolder: "editorTxt",
-                                      sSkinURI: "./smarteditor/SmartEditor2Skin.html",
-                                      fCreator: "createSEditor2"
-                                  })
-                              }
-
-                              document.addEventListener("DOMContentLoaded", function(){
-                                  smartEditor()
-                              });
-                          </script>
+                          <label for="content">내용</label>
+                          <textarea name="content" id="content" rows="20" cols="10" placeholder="내용을 입력해주세요" style="width:100%"></textarea>
+                          <span class="focus-border">
+                            <i></i>
+                          </span>
                       </div>
                   </div>
+<%--                  <div class="input-group">--%>
+<%--                      <div class="input-tit">내용</div>--%>
+<%--                      <div class="input-info">--%>
+<%--                          <body>--%>
+<%--                              <h3>Naver Smart Editor 2.0</h3>--%>
+<%--                              <form action="insertStudentInfoForm" method="post">--%>
+<%--                                  <div id="smarteditor">--%>
+<%--                                      <textarea name="editorTxt" id="editorTxt" rows="20" cols="10" placeholder="내용을 입력해주세요" style="width:100%"></textarea>--%>
+<%--                                  </div>--%>
+<%--                              </form>--%>
+<%--                          </body>--%>
+<%--                          <script>--%>
+<%--                              let oEditors = []--%>
+<%--                              smartEditor = function(){--%>
+<%--                                  console.log("Naver SmartEditor")--%>
+<%--                                  nhn.husky.EZCreator.createInIFrame({--%>
+<%--                                      oAppRef: oEditors,--%>
+<%--                                      elPlaceHolder: "editorTxt",--%>
+<%--                                      sSkinURI: "./smarteditor/SmartEditor2Skin.html",--%>
+<%--                                      fCreator: "createSEditor2"--%>
+<%--                                  })--%>
+<%--                              }--%>
+
+<%--                              document.addEventListener("DOMContentLoaded", function(){--%>
+<%--                                  smartEditor()--%>
+<%--                              });--%>
+<%--                          </script>--%>
+<%--                      </div>--%>
+<%--                  </div>--%>
                   <div class="bt_wrap">
                       <button type="submit">등록</button>
                       <a href="/board_list">목록</a>

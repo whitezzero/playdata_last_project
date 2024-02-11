@@ -96,9 +96,15 @@
                 %>
                 </tbody>
             </table>
+            <% if (session.getAttribute("loggedInUser") != null) { %>
             <div class="bt_wrap">
                 <a href="/board_write" class="on">등록</a>
             </div>
+            <% } else { %>
+            <div class="bt_wrap">
+                <a href="#" class="on">로그인을 해주세요</a>
+            </div>
+            <% } %>
         </div>
         <script>
             var selectBox = document.querySelector('.boardLt .tit');

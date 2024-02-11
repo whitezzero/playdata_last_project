@@ -12,7 +12,7 @@
     Statement statement = conn.createStatement();
 
     statement.executeQuery("DELETE FROM post_list WHERE idx = " + postId);
-    response.sendRedirect("board_list.jsp");
+    response.sendRedirect("board_list");
 %>
 <!DOCTYPE html>
 <html lang="ko">

@@ -1,4 +1,20 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    // JDBC 드라이버 로드
+    Class.forName("org.mariadb.jdbc.Driver");
+
+    // 데이터베이스 연결 설정
+    Connection conn = DriverManager.getConnection("jdbc:mariadb://172.17.0.3:3306/recipe", "root", "root1234");
+    int postId = Integer.parseInt(request.getParameter("postId"));
+    Statement statement = conn.createStatement();
+
+    ResultSet resultSet = statement.executeQuery("SELECT title, content, user_id, created_at FROM post_list WHERE idx = " + postId);
+    while(resultSet.next()) {
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,26 +33,25 @@
     <article id="board_detail" class="board_wrap">
         <div class="board_tit">
             <strong>공지사항</strong>
-            <p>어쩌고저쩌고</p>
         </div>
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="tit">
                     <dl>
                         <dt>제목</dt>
-                        <dd>작성한 제목</dd>
+                        <dd><%= resultSet.getString("title") %></dd>
                     </dl>
                     <dl>
                         <dt>작성자</dt>
-                        <dd>작성한 제목</dd>
+                        <dd><%= resultSet.getString("user_id") %></dd>
                     </dl>
                     <dl>
                         <dt>작성일</dt>
-                        <dd>작성한 제목</dd>
+                        <dd><%= resultSet.getString("created_at") %></dd>
                     </dl>
                 </div>
                 <div class="cont">
-                    컨텐츠 내용
+                    <%= resultSet.getString("content") %>>
                 </div>
             </div>
             <div class="bt_wrap">
@@ -47,6 +62,12 @@
         </div>
     </article>
 </section>
+<% } %>
+<%
+    resultSet.close();
+    statement.close();
+    conn.close();
+%>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
