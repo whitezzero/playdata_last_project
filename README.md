@@ -29,8 +29,7 @@
 ## 3. 팀원 소개
 김성훈|김유준|박혜민|백민호|지용욱
 ---|---|---|---|---|
-![aaa]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/aff059b8-5d4d-4ed7-ad3e-fb286ccc2357)
-|![ddd]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/49fbf1e2-e0f6-4ace-99b6-9a0463a244e9)
+![aaa]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/aff059b8-5d4d-4ed7-ad3e-fb286ccc2357)|![ddd]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/49fbf1e2-e0f6-4ace-99b6-9a0463a244e9)
 |![zzz]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/9feb2ebf-84f5-49ef-b8ad-25111067b208)
 |![ccc]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/7dd2ee28-72f1-4483-83a5-1b67f5cc0de9)
 |![sss]![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/70f95b58-5945-4e54-a28d-f4734ac8bb06)
