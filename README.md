@@ -29,22 +29,33 @@
 ## 3. 팀원 소개
 김성훈|김유준|박혜민|백민호|지용욱
 ---|---|---|---|---|
-![aaa](https://github.com/whitezzero/playdata_last_project/assets/142198289/8539e9ce-9e82-4a23-899a-e253ce97d1b6)|![ddd](https://github.com/whitezzero/playdata_last_project/assets/142198289/eebec280-eb91-4a03-879e-30b83475651f)|![zzz](https://github.com/whitezzero/playdata_last_project/assets/142198289/7a054b2e-b74b-40eb-bb1c-5fa2995f87cc)|![ccc](https://github.com/whitezzero/playdata_last_project/assets/142198289/6c1d6691-0970-48f7-9fb2-aacaf7108da7)|![sss](https://github.com/whitezzero/playdata_last_project/assets/142198289/71f7aea4-7453-4ee2-b002-6042238d2373)
+![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/aff059b8-5d4d-4ed7-ad3e-fb286ccc2357)|![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/49fbf1e2-e0f6-4ace-99b6-9a0463a244e9)|![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/9feb2ebf-84f5-49ef-b8ad-25111067b208)|![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/7dd2ee28-72f1-4483-83a5-1b67f5cc0de9)|![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/70f95b58-5945-4e54-a28d-f4734ac8bb06)
+
 
 ## 역할 분담
 ### 김성훈
  - 아키텍처 작성 및 일정 관리
  - 프로젝트 기획서 작성
+ - 식재료 & 레시피 크롤링
 ### 김유준
- - 로그인 & 회원가입 db 구축 및 연결
+ - 식재료 인식 모델 개발
+ - 백엔드 개발
+ - db 구축 및 연결
  - 식재료 & 레시피 크롤링 
 ### 박혜민
- - 로고 및 홈페이지 제작
+ - 프론트엔드 개발
+ - 식재료 & 레시피 크롤링
 ### 백민호
- - 
+ - 식재료 & 레시피 크롤링
+ - db 구축 및 연결
+ - 도커 연결
 ### 지용욱
  - 식재료 인식 모델 개발
  - 유사도 알고리즘 작성
+ - 식재료 & 레시피 크롤링
+ - 백앤드 개발
+ - db 구축 및 연결
+ - 도커 연결
 
 ## 4. 서비스 소개
 👉[냉잔고](홈페이지 링크)
