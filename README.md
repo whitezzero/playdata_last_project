@@ -59,9 +59,19 @@
 
 ## 4. 서비스 소개
 
+### 이미지 업로드
+폴더에 있는 사진을 업로드 할 수 있는 팝업이 열립니다.
+카메라로 사진을 촬영하여 사진을 업로드 합니다.
+
+### 재료 이미지 업로드 팝업
+폴더에 저장되어 있는 이미지를 업로드 할 수 있는 영역에서 업로드할 수 있고, 업로드한 이미지 확인가능.
+‘레시피 추천 받기’ 버튼을 누르면 레시피 추천페이지로 이동.
+
+### 레시피 추천 페이지
+업로드한 재료가 무엇인지 인식하고,
+인식된 재료와 재료에 적합한 추천 레시피 3개를 보여줍니다.
+
 ![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/2f8d68b0-24e0-4141-a169-c35a4eeebf2b)
-
-
 
 
 
@@ -71,9 +81,10 @@
 ## 프로젝트 구조
 
 ## 프로젝트 아키텍처
--![3D 아키텍쳐](https://github.com/whitezzero/playdata_last_project/assets/142198289/392a165d-3b84-4463-8eae-f14531655fa1)
+![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/71a9c661-0fe9-4c40-8afc-7b4bb7ad5d5e)
 
-## 개발 환경
+
+## 🛠 개발 환경
 - Java
 - Springboot
 - HTML, CSS, JavaScript, Jquery
@@ -83,7 +94,6 @@
 - Collaboration : Notion
 - 배포 : Docker & Nginx
 
-## 🛠 개발환경
 - ### DB
 <img src="https://img.shields.io/badge/MariaDB-003545F?style=for-the-badge&logo=mariadb&logoColor=white">
 
