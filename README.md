@@ -58,8 +58,12 @@
  - 도커 연결
 
 ## 4. 서비스 소개
-👉[냉잔고](홈페이지 링크)
-![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/fa0beab2-8a84-498f-87f6-873d4cb60f15)
+
+![image](https://github.com/whitezzero/playdata_last_project/assets/159407646/2f8d68b0-24e0-4141-a169-c35a4eeebf2b)
+
+
+
+
 
 
 
