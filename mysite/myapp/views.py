@@ -308,5 +308,5 @@ def check_view2(request):
     cursor.close()
     mydb.close()
     # 나의 아이피 넣기
-    return redirect("http://192.168.219.100:8089/list")
+    return redirect("http://192.168.0.149:8089/list")
     # DB에 추천하는 레시피 ID 넣기 끝
